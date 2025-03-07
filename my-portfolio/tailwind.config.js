@@ -31,6 +31,8 @@ export default {
     extend: {
       boxShadow: {
         glowCyan: "0px 0px 20px 0px rgba(94,206,220,0.5)",
+        cyanMediumShadow:"10px 10px 200px 150px rgba(94,206 ,220, 0.5)",
+        orangeMediumShadow:"10px 100px 200px 115px rgba(240,169,79,0.5)"
       },
     },
     fontFamily: {

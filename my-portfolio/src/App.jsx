@@ -1,7 +1,10 @@
 
-import './App.css'
+import AboutMeMain from './component/aboutMeSection/AboutMeMain'
 import HeroMai from './component/heroSection/HeroMai'
-import NavbarMain from './component/navbar/NavbarMain'
+import SuHero from './component/heroSection/SuHero'
+import HelperSection from './component/navbar/HelperSection'
+import NavbarMain from './NavbarMain'
+import SkillsMain from './component/skillsSection/SkillsMain'
 
 
 function App() {
@@ -11,6 +14,10 @@ function App() {
   <main className='font-body'> 
      <NavbarMain/>
      <HeroMai/>
+     <SuHero/>
+     <AboutMeMain/>
+     <HelperSection/>
+     
   </main>
   )
 }
