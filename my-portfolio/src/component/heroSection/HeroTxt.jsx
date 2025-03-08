@@ -9,8 +9,8 @@ const HeroTxt = () => {
       <h1 className="md:text-[2.8rem] lg:text-6xl sm:text-4xl font-bold font-special text-orange">
         SAHIL SHINDE
       </h1>
-      <p className='text-lg mt-4  text-white'>
-        A Passionate Web Developer <br />with 1 years of experience
+      <p className='text-lg mt-4 text-white'>
+        A Passionate Web Developer <br />with 1 year of experience
       </p>
     </div>
   )

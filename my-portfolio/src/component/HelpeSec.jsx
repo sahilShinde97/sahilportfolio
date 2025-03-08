@@ -1,9 +1,9 @@
 import React from 'react'
 
-const HelperSection = () => {
+const HelpeSec = () => {
   return (
     <div className=' h-[100vh]'></div>
   )
 }
 
-export default HelperSection
+export default HelpeSec
