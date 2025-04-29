@@ -77,10 +77,11 @@ const ShowcaseSection = () => {
             <div className="project" ref={Project3Ref}>
               <div className="image-wrapper bg-[#ffe7efdb]">
                 <img src="/images/project3.png" alt="YC Directory" />
-              </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              </div>   
             </div>
+            <h2>YC Directory - A Startup Showcase App</h2>
           </div>
+          
         </div>
       </div>
     </section>
