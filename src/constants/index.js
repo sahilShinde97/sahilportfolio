@@ -96,7 +96,7 @@ const navLinks = [
     },
     {
       name: "Python Developer",
-      imgPath: "/images/logos/python.svg",
+      imgPath: "/images/logos/python.svg", 
     },
     {
       name: "Backend Developer",
@@ -120,9 +120,9 @@ const navLinks = [
       rotation: [0, 0, 0],
     },
     {
-      name: "Python Developer",
-      modelPath: "/models/python-transformed.glb",
-      scale: 0.8,
+      name: "C++ Developer",
+      modelPath: "/models/c-transformed.glb",
+      scale: 0.08,
       rotation: [0, 0, 0],
     },
     {
@@ -138,7 +138,7 @@ const navLinks = [
       rotation: [0, 0, 0],
     },
     {
-      name: "Project Manager",
+      name: "Git-GitHub",
       modelPath: "/models/git-svg-transformed.glb",
       scale: 0.05,
       rotation: [0, -Math.PI / 4, 0],
