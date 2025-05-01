@@ -2,8 +2,10 @@
 
 
 import NavBar from "./components/Navbar";
+import Contact from "./sections/Contact";
 import ExperienceSection from "./sections/ExperienceSection";
 import FeatureCards from "./sections/FeatureCards";
+import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import LogoSection from "./sections/LogoSection";
 import ShowcaseSection from "./sections/ShowcaseSection";
@@ -23,6 +25,8 @@ const App = () => {
     <ExperienceSection />
     <TechStack />
     <Testimonials />
+    <Contact />
+    <Footer />
   
     </>
   );

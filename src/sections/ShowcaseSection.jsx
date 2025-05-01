@@ -53,12 +53,12 @@ const ShowcaseSection = () => {
 
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="To-Good-Co" />
+              <img src="/images/project1.png" alt="PORTFOLIO WEBSITE" />
             </div>
             <div className="text-content">
-              <h2>Empowering Women, One Purchase at a Time Web-Site-Clone</h2>
+              <h2>MY-PORTFOLIO WEBSITE</h2>
               <p className="text-white-50 md:text-xl">
-                A website clone using HTML, CSS, and JavaScript.
+              3D Web Developer Portfolio with React, Three JS & GSAP
               </p>
             </div>
           </div>
@@ -68,18 +68,18 @@ const ShowcaseSection = () => {
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
                   src="/images/project2.png"
-                  alt="Library management Platform"
+                  alt="PAPER-PORTFOLIO"
                 />
               </div>
-              <h2>Library Management Platform</h2>
+              <h2>MIRANDA - Paper Portfolio </h2>
             </div>
 
             <div className="project" ref={Project3Ref}>
               <div className="image-wrapper bg-[#ffe7efdb]">
-                <img src="/images/project3.png" alt="YC Directory" />
+                <img src="/images/project3.png" alt="To-Good-Co" />
               </div>   
             </div>
-            <h2>YC Directory - A Startup Showcase App</h2>
+            <h2>To-Good-Co - A website clone using HTML, CSS, and JavaScript.</h2>
           </div>
           
         </div>
