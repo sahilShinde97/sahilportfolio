@@ -19,23 +19,32 @@ const Particles = ({ count = 200 }) => {
     return temp;
   }, [count]);
 
+  // Optimize frame updates - only update every few frames for better performance
+  let frameCount = 0;
   useFrame(() => {
-    const positions = mesh.current.geometry.attributes.position.array;
-    for (let i = 0; i < count; i++) {
-      let y = positions[i * 3 + 1];
-      y -= particles[i].speed;
-      if (y < -2) y = Math.random() * 10 + 5;
-      positions[i * 3 + 1] = y;
+    frameCount++;
+    // Only update particles every 2 frames for better performance
+    if (frameCount % 2 === 0) {
+      const positions = mesh.current.geometry.attributes.position.array;
+      for (let i = 0; i < count; i++) {
+        let y = positions[i * 3 + 1];
+        y -= particles[i].speed;
+        if (y < -2) y = Math.random() * 10 + 5;
+        positions[i * 3 + 1] = y;
+      }
+      mesh.current.geometry.attributes.position.needsUpdate = true;
     }
-    mesh.current.geometry.attributes.position.needsUpdate = true;
   });
 
-  const positions = new Float32Array(count * 3);
-  particles.forEach((p, i) => {
-    positions[i * 3] = p.position[0];
-    positions[i * 3 + 1] = p.position[1];
-    positions[i * 3 + 2] = p.position[2];
-  });
+  const positions = useMemo(() => {
+    const pos = new Float32Array(count * 3);
+    particles.forEach((p, i) => {
+      pos[i * 3] = p.position[0];
+      pos[i * 3 + 1] = p.position[1];
+      pos[i * 3 + 2] = p.position[2];
+    });
+    return pos;
+  }, [particles, count]);
 
   return (
     <points ref={mesh}>
@@ -53,6 +62,7 @@ const Particles = ({ count = 200 }) => {
         transparent
         opacity={0.9}
         depthWrite={false}
+        sizeAttenuation={true}
       />
     </points>
   );

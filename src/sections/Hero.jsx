@@ -5,6 +5,7 @@ import HeroExperience from "../components/HeroModels/HeroExperience";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";
+import PerformanceIndicator from "../components/PerformanceIndicator";
 
 const Hero = () => {
   useGSAP(() => {
@@ -81,6 +82,7 @@ const Hero = () => {
         </figure>
       </div>
       <AnimatedCounter />
+      <PerformanceIndicator />
     </section>
   );
 };
