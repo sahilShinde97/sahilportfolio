@@ -1,0 +1,27 @@
+{
+  "name": "sahil-3d-portfolio",
+  "version": "1.0.0",
+  "description": "Optimized 3D Portfolio with Performance Enhancements",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "keywords": [
+    "portfolio",
+    "3d",
+    "react",
+    "three.js",
+    "webgl",
+    "performance"
+  ],
+  "author": "Sahil",
+  "license": "MIT",
+  "homepage": "https://your-domain.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/sahilportfolio.git"
+  }
+}
